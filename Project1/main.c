@@ -18,7 +18,15 @@ float ton,centner,gramm;
  scanf ("%f", &ton);
  centner = ton/10;
  gramm = ton/1e+6;
- printf ("%f Граммы \n%f Центнеры \n", &gramm,&centner, gramm,centner);
+ if (ton)
+ {
+ 	printf ("%f Граммы\n %f Центнеры\n",  gramm,centner);
+ }
+ else
+ {
+ 	printf ("Ошибка.Введите число \n");
+ }
+ 
  system ("pause");
 	return 0;
 }
